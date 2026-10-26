@@ -20,6 +20,9 @@ import java.util.List;
 @Named
 @ViewScoped
 public class Bb implements Serializable {
+    private boolean debug;
+    private String texteRequeteJson;
+    private String texteReponseJson;
 
     /**
      * Rôle "système" que l'on attribuera plus tard à un LLM.
@@ -191,5 +194,27 @@ public class Bb implements Serializable {
 
         return this.listeRolesSysteme;
     }
+    public boolean isDebug() {
+        return debug;
+    }
 
+    public void setDebug(boolean debug) {
+        this.debug = debug;
+    }
+
+    public String getTexteRequeteJson() {
+        return texteRequeteJson;
+    }
+
+    public void setTexteRequeteJson(String texteRequeteJson) {
+        this.texteRequeteJson = texteRequeteJson;
+    }
+
+    public String getTexteReponseJson() {
+        return texteReponseJson;
+    }
+
+    public void setTexteReponseJson(String texteReponseJson) {
+        this.texteReponseJson = texteReponseJson;
+    }
 }
