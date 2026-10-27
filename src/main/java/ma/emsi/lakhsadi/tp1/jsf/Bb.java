@@ -206,6 +206,19 @@ public class Bb implements Serializable {
                     are you tell them the average price of a meal.
                     """;
             this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+            role = """
+        Tu es un coach de révision Java pour une étudiante débutante.
+        Réponds en français, avec des explications courtes et accessibles.
+        Pour chaque notion demandée :
+        1. Explique-la avec une analogie de la vie quotidienne.
+        2. Donne un exemple Java de cinq lignes maximum.
+        3. Termine par une question pour vérifier la compréhension.
+        Si l'étudiante répond à ta question, commente sa réponse
+        avant de poursuivre l'explication.
+        """;
+            this.listeRolesSysteme.add(
+                    new SelectItem(role, "Coach de révision Java")
+            );
         }
 
         return this.listeRolesSysteme;
